@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   Hello! my Name is <strong>{props.name}</strong>
+   <br/>
+   <p className='para'>By the time you are watching this App I've already learned React and moved onto learning some more libraries</p>
+   <p className='para1'>All information you see on this page was created using Javascript,JSXElements</p>
     </div>
-  );
-}
+    
+  )
+  }
 
 export default App;
